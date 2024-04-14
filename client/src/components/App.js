@@ -4,6 +4,7 @@ import Article from "./Article";
 import Header from "./Header";
 import Home from "./Home";
 import Login from "./Login";
+import MemberArticles from "./MemberArticles";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -33,6 +34,9 @@ function App() {
         </Route>
         <Route exact path="/login">
           <Login onLogin={handleLogin} />
+        </Route>
+        <Route exact path="/members">
+          <MemberArticles />
         </Route>
         <Route exact path="/">
           <Home />

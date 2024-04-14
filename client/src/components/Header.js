@@ -12,6 +12,9 @@ function Header({ user, onLogout }) {
       <h1>
         <Link to="/">Lorem Blogum</Link>
       </h1>
+      <p>
+        <Link to="/members">Click here for exclusive member-only content!</Link>
+      </p>
       {user ? (
         <div>
           <p>Welcome, {user.username}!</p>
